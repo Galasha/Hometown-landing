@@ -28,7 +28,6 @@ body {
   width: 400px;
   margin-left: 190px;
   font-style: italic;
-  text-shadow: 1px 1px black;
 }
 .title {
   background-image: url("images/header.jpg");
@@ -71,6 +70,11 @@ h1 {
 h3 {
   text-align: center;
   text-shadow: 1px 1px black;
+  padding: 0px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cts_bl_fst,
 .cts_bl_snd {
@@ -131,6 +135,10 @@ p {
   max-width: 700px;
 }
 
+.modal-window {
+  position: relative;
+}
+
 /* Caption of Modal Image */
 #caption {
   margin: auto;
@@ -173,8 +181,8 @@ p {
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 0%;
+  right: 23%;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
