@@ -4,19 +4,24 @@ white #fffdf7
 light blue #99d6ea
 bright blue #6798c0
 dark blue #001d3d*/
-@font-face {
+html {
+  font-size: 14px;
+}
+
+/*@font-face {
   src: url("fonts/EBGaramond12-Regular.ttf");
   font-family: Garamond;
-}
+}*/
 
 body {
   background: #001d3d;
   color: #99d6ea;
-  font-family: Garamond;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 65%;
   border: 4px solid #fffdf7;
   border-radius: 8px;
   margin: 0 auto;
@@ -24,21 +29,22 @@ body {
 }
 .info {
   font-weight: bold;
-  font-size: 14px;
-  width: 400px;
-  margin-left: 190px;
+  font-size: 1.2rem;
+  width: 70%;
+  margin-left: 30%;
   font-style: italic;
 }
 .title {
   background-image: url("images/header.jpg");
   background-size: cover;
+  margin: 0px;
+  padding: 0px;
   padding: none;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  margin: -12px !important;
 }
 
 h1 {
@@ -47,24 +53,24 @@ h1 {
   padding: 0 8px;
   background: #001d3d;
   color: #fdc921;
-  font-size: 24px;
+  font-size: 1.7rem;
   text-shadow: 1px 1px black;
   font-style: italic;
 }
 
 .title-info {
-  font-size: 16px;
+  font-size: 1.15rem;
   text-align: center;
   font-weight: bold;
   text-shadow: 1px 1px black;
-  width: 500px;
+  width: 80%;
   margin: 0 auto;
   margin-top: 10px;
 }
 
 #city {
-  width: 140px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
 }
 
 h3 {
@@ -85,20 +91,18 @@ h3 {
 }
 
 .smallFont {
-  font-size: 16px;
+  font-size: 1.15rem;
   padding: 3px 0;
 }
 p {
-  font-size: 14px;
+  font-size: 1rem;
   padding: 5px;
-  font-style: italic;
-  text-shadow: 1px 1px black;
-  /*font-weight: bold;*/
 }
 
 .image_city {
   width: 120px;
   border-radius: 50%;
+  margin: 0 auto;
   border: 1px solid #fdd85d;
   overflow: hidden;
 }
@@ -132,7 +136,6 @@ p {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
 }
 
 .modal-window {
@@ -143,12 +146,10 @@ p {
 #caption {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 60%;
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
 }
 
 /* Add Animation */
@@ -181,10 +182,10 @@ p {
 /* The Close Button */
 .close {
   position: absolute;
-  top: 0%;
-  right: 23%;
+  top: -2%;
+  right: 10%;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 2.85rem;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -196,16 +197,32 @@ p {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
 footer {
-  padding: 20px;
+  padding: 1.5rem;
   font-size: bold;
   text-shadow: 1px 1px black;
   font-style: italic;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+
+  h3 {
+    height: 30px;
+  }
+
+  .image_city {
+    width: 70px;
+  }
 }
